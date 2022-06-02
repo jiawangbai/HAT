@@ -17,6 +17,7 @@ apex-amp
 ## Training
 Training ViT models with HAT using the default settings in our paper on 8 GPUs:
 
+```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 \
 --data_dir [your_imagenet_path] \
 --model [your_vit_model_name] \
@@ -27,10 +28,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 \
 --adv-ce-weight 3.0 \
 --output [your_output_path] \
 and_other_parameters_specified_for_your_vit_models...
-
+```
 
 For instance, we train Swin-T with the following command:
-
+```shell
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 \
 --data_dir [your_imagenet_path] \
 --model swin_tiny_patch4_window7_224 \
@@ -45,7 +46,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 \
 --lr 1e-3 \
 --weight-decay 0.05 \
 --clip-grad 1.0
-
+```
 For training variants of ViT, Swin Transformer, VOLO, we use the hyper-parameters in [3], [4], and [2], respectively.
 
 ## Validation
@@ -53,7 +54,7 @@ For training variants of ViT, Swin Transformer, VOLO, we use the hyper-parameter
 After training, we can use validate.py to evaluate the ViT model trained with HAT.
 
 For instance, we evaluate Swin-T with the following command:
-
+```shell
 python3 -u validate.py \
 --data_dir [your_imagenet_path] \
 --model swin_tiny_patch4_window7_224 \
@@ -62,7 +63,7 @@ python3 -u validate.py \
 --num-gpu 8 \
 --apex-amp \
 --results-file [your_results_file_path]
-
+```
 
 [1] Wightman, R.: Pytorch image models. https://github.com/rwightman/pytorch-image-models (2019). https://doi.org/10.5281/zenodo.4414861
 [2] Yuan, L., Hou, Q., Jiang, Z., Feng, J., Yan, S.: Volo: Vision outlooker for visual recognition. arXiv preprint arXiv:2106.13112 (2021)
