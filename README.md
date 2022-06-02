@@ -1,4 +1,8 @@
 # HAT
+https://paperswithcode.com/sota/image-classification-on-imagenet?tag_filter=171
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/improving-vision-transformers-by-revisiting/domain-generalization-on-stylized-imagenet)](https://paperswithcode.com/sota/domain-generalization-on-stylized-imagenet?p=improving-vision-transformers-by-revisiting)
+
 Implementation of HAT https://arxiv.org/pdf/2204.00993
 ```shell
 @article{bai2022improving,
