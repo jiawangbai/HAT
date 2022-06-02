@@ -39,6 +39,7 @@ tlt==0.1.0
 pyyaml  
 apex-amp  
 
+## ImageNet Classification
 ### Training
 Training ViT models with HAT using the default settings in our paper on 8 GPUs:
 
