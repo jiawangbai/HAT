@@ -65,7 +65,7 @@ python3 -u validate.py \
 --results-file [your_results_file_path]
 ```
 
-[1] Wightman, R.: Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.
-[2] Yuan, L et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.
+[1] Wightman, R.: Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
+[2] Yuan, L et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.  
 [3] Dosovitskiy, A. et al. An image is worth 16x16 words: Transformers for image recognition at scale. ICLR, 2020.  
 [4] Liu, Z. et al. Swin transformer: Hierarchical vision transformer using shifted windows. ICCV, 2021.
