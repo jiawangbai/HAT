@@ -39,7 +39,7 @@ tlt==0.1.0
 pyyaml  
 apex-amp  
 
-## Training
+### Training
 Training ViT models with HAT using the default settings in our paper on 8 GPUs:
 
 ```shell
@@ -74,7 +74,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 \
 ```
 For training variants of ViT, Swin Transformer, VOLO, we use the hyper-parameters in [3], [4], and [2], respectively.
 
-## Validation
+### Validation
 
 After training, we can use validate.py to evaluate the ViT model trained with HAT.
 
