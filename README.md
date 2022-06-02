@@ -7,7 +7,7 @@ We use the ImageNet-1K training and validation datasets by default.
 Please save them in [your_imagenet_path].
 
 ## Requirements
-torch>=1.7.0
+torch>=1.7.0  
 torchvision>=0.8.0  
 timm==0.4.5  
 tlt==0.1.0  
