@@ -6,6 +6,14 @@ Implementation of HAT https://arxiv.org/pdf/2204.00993
 We use the ImageNet-1K training and validation datasets by default.
 Please save them in [your_imagenet_path].
 
+```shell
+@article{bai2022improving,
+  title={Improving Vision Transformers by Revisiting High-frequency Components},
+  author={Bai, Jiawang and Yuan, Li and Xia, Shu-Tao and Yan, Shuicheng and Li, Zhifeng and Liu, Wei},
+  journal={arXiv preprint arXiv:2204.00993},
+  year={2022}
+}
+```
 ## Requirements
 torch>=1.7.0  
 torchvision>=0.8.0  
