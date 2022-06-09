@@ -95,21 +95,21 @@ python3 -u validate.py \
 
 We first pretrain Swin-T/S/B on the ImageNet-1k dataset with our proposed HAT, and then transfer the models to the downstream tasks, including object detection, instance segmentation, and semantic segmentation. 
 
-We use the codes in [Swin Transformer for Object Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) and [Swin Transformer for Semantic Segmentaion](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation), and all their configurations.
+We use the codes in [Swin Transformer for Object Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) and [Swin Transformer for Semantic Segmentaion](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation), and follow their configurations.
 
-Cascade Mask R-CNN on COCO val 2017
+### Cascade Mask R-CNN on COCO val 2017
 | Backbone   | Params | FLOPs | Config| AP_box | +HAT AP_box | AP_mask | +HAT AP_mask |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Swin-T  | 86M  | 745G  | [config]() | 50.5  |  **50.9**      |43.7| **43.9**      |
-| Swin-S  | 107M  | 838G | [config]() | 51.8  |  **52.5**      |44.7| **45.4**      |
-| Swin-B  | 145M  | 982G  | [config]() | 51.9  |  **52.8**       |45.0| **45.6**      |
+| Swin-T  | 86M  | 745G  | [config](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection/blob/master/configs/swin/cascade_mask_rcnn_swin_tiny_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_coco.py) | 50.5  |  **50.9**      |43.7| **43.9**      |
+| Swin-S  | 107M  | 838G | [config](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection/blob/master/configs/swin/cascade_mask_rcnn_swin_small_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_coco.py) | 51.8  |  **52.5**      |44.7| **45.4**      |
+| Swin-B  | 145M  | 982G  | [config](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection/blob/master/configs/swin/cascade_mask_rcnn_swin_base_patch4_window7_mstrain_480-800_giou_4conv1f_adamw_3x_coco.py) | 51.9  |  **52.8**       |45.0| **45.6**      |
 
-UperNet on ADE20K
+### UperNet on ADE20K
 | Backbone   | Params | FLOPs | Config| mIoU(MS) | +HAT mIoU(MS) |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| Swin-T  | 60M  | 945G  | [config]() | 46.1  |  **46.7**      |
-| Swin-S  | 81M  | 1038G | [config]() | 49.5  |  **49.7**      |
-| Swin-B  | 121M  | 1088G  | [config]() |  49.7 |  **50.3**       |
+| Swin-T  | 60M  | 945G  | [config](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation/blob/main/configs/swin/upernet_swin_tiny_patch4_window7_512x512_160k_ade20k.py) | 46.1  |  **46.7**      |
+| Swin-S  | 81M  | 1038G | [config](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation/blob/main/configs/swin/upernet_swin_small_patch4_window7_512x512_160k_ade20k.py) | 49.5  |  **49.7**      |
+| Swin-B  | 121M  | 1088G  | [config](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation/blob/main/configs/swin/upernet_swin_base_patch4_window7_512x512_160k_ade20k.py) |  49.7 |  **50.3**       |
 
 
 [1] Wightman, R. Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
