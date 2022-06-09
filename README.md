@@ -97,11 +97,20 @@ We first pretrain Swin-T/S/B on the ImageNet-1k dataset with our proposed HAT, a
 
 We use the codes in [Swin Transformer for Object Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) and [Swin Transformer for Semantic Segmentaion](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation), and all their configurations.
 
-| Backbone   | Params | FLOPs | AP_box | +HAT AP_box | AP_mask | +HAT AP_mask |
+Cascade Mask R-CNN on COCO val 2017
+| Backbone   | Params | FLOPs | Config| AP_box | +HAT AP_box | AP_mask | +HAT AP_mask |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Swin-T  | 86M  | 745G  | 50.5  |  **50.9**      |43.7| **43.9**      |
-| Swin-S  | 107M  | 838G | 51.8  |  **52.5**      |44.7| **45.4**      |
-| Swin-B  | 145M  | 982G  | 51.9  |  **52.8**       |45.0| **45.6**      |
+| Swin-T  | 86M  | 745G  | [config]() | 50.5  |  **50.9**      |43.7| **43.9**      |
+| Swin-S  | 107M  | 838G | [config]() | 51.8  |  **52.5**      |44.7| **45.4**      |
+| Swin-B  | 145M  | 982G  | [config]() | 51.9  |  **52.8**       |45.0| **45.6**      |
+
+UperNet on ADE20K
+| Backbone   | Params | FLOPs | Config| mIoU(MS) | +HAT mIoU(MS) |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Swin-T  | 60M  | 945G  | [config]() | 46.1  |  **46.7**      |
+| Swin-S  | 81M  | 1038G | [config]() | 49.5  |  **49.7**      |
+| Swin-B  | 121M  | 1088G  | [config]() |  49.7 |  **50.3**       |
+
 
 [1] Wightman, R. Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
 [2] Yuan, L. et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.  
