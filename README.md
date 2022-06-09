@@ -95,7 +95,7 @@ python3 -u validate.py \
 
 We first pretrain Swin-T/S/B on the ImageNet-1k dataset with our proposed HAT, and then transfer the model to the downstream tasks, including object detection, instance segmentation, and semantic segmentation. 
 
-We use the codes in [Swin Transformer for Object Detection]([https://www.runoob.com](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection)
+We use the codes in [Swin Transformer for Object Detection]([https://github.com/SwinTransformer/Swin-Transformer-Object-Detection])
 All codes and configurations 
 
 [1] Wightman, R. Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
