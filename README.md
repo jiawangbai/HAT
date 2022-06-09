@@ -63,6 +63,9 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 ./distributed_train.sh 8 \
 ```
 For training variants of ViT, Swin Transformer, VOLO, we use the hyper-parameters in [3], [4], and [2], respectively.
 
+
+We also combine HAT with knowledge distillation in [5], using [train_kd.py]().
+
 ### Validation
 
 After training, we can use validate.py to evaluate the ViT model trained with HAT.
@@ -79,6 +82,7 @@ python3 -u validate.py \
 --results-file [your_results_file_path]
 ```
 
+
 ### Results
 | Model   | Params | FLOPs | Test Size | Top-1 | +HAT Top-1 | Download |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -93,6 +97,8 @@ python3 -u validate.py \
 | VOLO-D5 | 295.5M | 69.0G | 224       | 86.1  |  **86.3**       |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d5_224.pth.tar)|
 | VOLO-D5 | 295.5M | 304G  | 448       | 87.0  |  **87.2**      |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d5_448.pth.tar)|
 | VOLO-D5 | 295.5M | 412G  | 512       | 87.1  |  **87.3**      |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d5_512.pth.tar)|
+
+The result of combining HAT with knowledge distillation in [5] is 84.3% for ViT-B, and it can be downloaded [here](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_deit_base_distilled_patch16_224.pth.tar).
 
 ## Downstream Tasks
 
@@ -119,3 +125,4 @@ We use the codes in [Swin Transformer for Object Detection](https://github.com/S
 [2] Yuan, L. et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.  
 [3] Dosovitskiy, A. et al. An image is worth 16x16 words: Transformers for image recognition at scale. ICLR, 2020.  
 [4] Liu, Z. et al. Swin transformer: Hierarchical vision transformer using shifted windows. ICCV, 2021.
+[5] Touvron H. et al. Training data-efficient image transformers & distillation through attention. ICML, 2021.
