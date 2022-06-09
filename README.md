@@ -82,17 +82,17 @@ python3 -u validate.py \
 ### Results
 | Model   | Params | FLOPs | Test Size | Top-1 | +HAT Top-1 | Download |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| ViT-T   | 5.7M   | 1.6G  | 224       | 72.2  | **73.3**      | [link]()|
-| ViT-S   | 22.1M  | 4.7G  | 224       | 80.1  |  **80.9**     |[link]()|
-| ViT-B   | 86.6M  | 17.6G | 224       | 82.0  |  **83.2**     |[link]()|
-| Swin-T  | 28.3M  | 4.5G  | 224       | 81.2  |  **82.0**      |[link]()|
-| Swin-S  | 49.6M  | 8.7G  | 224       | 83.0  |  **83.3**      |[link]()|
-| Swin-B  | 87.8M  | 15.4G | 224       | 83.5  |  **84.0**       |[link]()|
-| VOLO-D1 | 26.6M  | 6.8G  | 224       | 84.2  |  **84.5**       |[link]()|
-| VOLO-D1 | 26.6M  | 22.8G | 384       | 85.2  |  **85.5**       |[link]()|
-| VOLO-D5 | 295.5M | 69.0G | 224       | 86.1  |  **86.3**       |[link]()|
-| VOLO-D5 | 295.5M | 304G  | 448       | 87.0  |  **87.2**      |[link]()|
-| VOLO-D5 | 295.5M | 412G  | 512       | 87.1  |  **87.3**      |[link]()|
+| ViT-T   | 5.7M   | 1.6G  | 224       | 72.2  | **73.3**      | [link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_vit_tiny_patch16_224.pth.tar)|
+| ViT-S   | 22.1M  | 4.7G  | 224       | 80.1  |  **80.9**     |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_vit_small_patch16_224.pth.tar)|
+| ViT-B   | 86.6M  | 17.6G | 224       | 82.0  |  **83.2**     |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_vit_base_patch16_224.pth.tar)|
+| Swin-T  | 28.3M  | 4.5G  | 224       | 81.2  |  **82.0**      |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_swin_tiny_patch4_window7_224.pth.tar)|
+| Swin-S  | 49.6M  | 8.7G  | 224       | 83.0  |  **83.3**      |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_swin_small_patch4_window7_224.pth.tar)|
+| Swin-B  | 87.8M  | 15.4G | 224       | 83.5  |  **84.0**       |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_swin_base_patch4_window7_224.pth.tar)|
+| VOLO-D1 | 26.6M  | 6.8G  | 224       | 84.2  |  **84.5**       |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d1_224.pth.tar)|
+| VOLO-D1 | 26.6M  | 22.8G | 384       | 85.2  |  **85.5**       |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d1_384.pth.tar)|
+| VOLO-D5 | 295.5M | 69.0G | 224       | 86.1  |  **86.3**       |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d5_224.pth.tar)|
+| VOLO-D5 | 295.5M | 304G  | 448       | 87.0  |  **87.2**      |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d5_448.pth.tar)|
+| VOLO-D5 | 295.5M | 412G  | 512       | 87.1  |  **87.3**      |[link](https://github.com/jiawangbai/HAT/releases/download/v0.0.1/hat_volo_d5_512.pth.tar)|
 
 ## Downstream Tasks
 
