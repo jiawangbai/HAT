@@ -98,10 +98,10 @@ We first pretrain Swin-T/S/B on the ImageNet-1k dataset with our proposed HAT, a
 We use the codes in [Swin Transformer for Object Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) and [Swin Transformer for Semantic Segmentaion](https://github.com/SwinTransformer/Swin-Transformer-Semantic-Segmentation), and all their configurations.
 
 | Backbone   | Params | FLOPs | AP_box | +AP_box | AP_mask | +HAT AP_mask |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| Swin-T  | 28.3M  | 4.5G  | 224       | 81.2  |  **82.0**      |
-| Swin-S  | 49.6M  | 8.7G  | 224       | 83.0  |  **83.3**      |
-| Swin-B  | 87.8M  | 15.4G | 224       | 83.5  |  **84.0**       |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Swin-T  | 28.3M  | 4.5G  | 224       | 81.2  |  **82.0**      ||
+| Swin-S  | 49.6M  | 8.7G  | 224       | 83.0  |  **83.3**      ||
+| Swin-B  | 87.8M  | 15.4G | 224       | 83.5  |  **84.0**       ||
 
 [1] Wightman, R. Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
 [2] Yuan, L. et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.  
