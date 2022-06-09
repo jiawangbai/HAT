@@ -25,12 +25,6 @@ Implementation of HAT https://arxiv.org/pdf/2204.00993
 
 
 
-
-## Data Preparation
-We use the ImageNet-1K training and validation datasets by default.
-Please save them in [your_imagenet_path].
-
-
 ## Requirements
 torch>=1.7.0  
 torchvision>=0.8.0  
@@ -40,6 +34,12 @@ pyyaml
 apex-amp  
 
 ## ImageNet Classification
+
+### Data Preparation
+We use the ImageNet-1K training and validation datasets by default.
+Please save them in [your_imagenet_path].
+
+
 ### Training
 Training ViT models with HAT using the default settings in our paper on 8 GPUs:
 
@@ -90,6 +90,13 @@ python3 -u validate.py \
 --apex-amp \
 --results-file [your_results_file_path]
 ```
+
+## Downstream Tasks
+
+We first pretrain Swin-T/S/B on the ImageNet-1k dataset with our proposed HAT, and then transfer the model to the downstream tasks, including object detection, instance segmentation, and semantic segmentation. 
+
+We use the codes in [Swin Transformer for Object Detection]([https://www.runoob.com](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection)
+All codes and configurations 
 
 [1] Wightman, R. Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
 [2] Yuan, L. et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.  
