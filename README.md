@@ -99,14 +99,14 @@ We use the codes in [Swin Transformer for Object Detection](https://github.com/S
 
 Cascade Mask R-CNN on COCO val 2017
 | Backbone   | Params | FLOPs | Config| AP_box | +HAT AP_box | AP_mask | +HAT AP_mask |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Swin-T  | 86M  | 745G  | [config]() | 50.5  |  **50.9**      |43.7| **43.9**      |
 | Swin-S  | 107M  | 838G | [config]() | 51.8  |  **52.5**      |44.7| **45.4**      |
 | Swin-B  | 145M  | 982G  | [config]() | 51.9  |  **52.8**       |45.0| **45.6**      |
 
 UperNet on ADE20K
 | Backbone   | Params | FLOPs | Config| mIoU(MS) | +HAT mIoU(MS) |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|:-:|
 | Swin-T  | 60M  | 945G  | [config]() | 46.1  |  **46.7**      |
 | Swin-S  | 81M  | 1038G | [config]() | 49.5  |  **49.7**      |
 | Swin-B  | 121M  | 1088G  | [config]() |  49.7 |  **50.3**       |
