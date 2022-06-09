@@ -124,5 +124,5 @@ We use the codes in [Swin Transformer for Object Detection](https://github.com/S
 [1] Wightman, R. Pytorch image models. https://github.com/rwightman/pytorch-image-models , 2019.  
 [2] Yuan, L. et al. Volo: Vision outlooker for visual recognition. arXiv, 2021.  
 [3] Dosovitskiy, A. et al. An image is worth 16x16 words: Transformers for image recognition at scale. ICLR, 2020.  
-[4] Liu, Z. et al. Swin transformer: Hierarchical vision transformer using shifted windows. ICCV, 2021.
+[4] Liu, Z. et al. Swin transformer: Hierarchical vision transformer using shifted windows. ICCV, 2021.  
 [5] Touvron H. et al. Training data-efficient image transformers & distillation through attention. ICML, 2021.
