@@ -1,6 +1,5 @@
 
-<img src="https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png" width="200" height="100"/><br/>
-
+<img src="https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png" width="200" height="100"/><br/> 
 # HAT
 
 Implementation of HAT https://arxiv.org/pdf/2204.00993
