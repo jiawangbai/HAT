@@ -1,4 +1,4 @@
-![avatar](https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png =100x200)
+![avatar](https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png=100x200)
 # HAT
 
 Implementation of HAT https://arxiv.org/pdf/2204.00993
