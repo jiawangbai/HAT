@@ -1,4 +1,5 @@
-![50]([url](https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png))
+![50]([url](https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png)
+![]([./pic/pic1_50.png](https://github.com/jiawangbai/HAT/blob/main/misc/eccv.png =100x20)
 # HAT
 
 Implementation of HAT https://arxiv.org/pdf/2204.00993
