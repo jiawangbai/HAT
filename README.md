@@ -3,7 +3,7 @@
 # HAT
 
 Implementation of HAT https://arxiv.org/pdf/2204.00993
-```shell
+```
 @inproceedings{bai2022improving,
   title={Improving Vision Transformers by Revisiting High-frequency Components},
   author={Bai, Jiawang and Yuan, Li and Xia, Shu-Tao and Yan, Shuicheng and Li, Zhifeng and Liu, Wei},
